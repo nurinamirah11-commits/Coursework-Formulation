@@ -219,9 +219,9 @@ print(f"Crystal Mass Gained Difference:      {difference:.4f} g ({r:.2f}%)")
 print("\n================= SIZE METRICS =================")
 print(f"MoL Initial Peak Size:               {peak_size_init_pbe:.4f} μm")
 print(f"MoL Final Peak Size:                 {peak_size_final_pbe:.4f} μm")
-print(f"\nMoM Number-Weighted Mean initial:  {num_mean_init_mom:.4f} μm")
+print(f"\nMoM Number-Weighted Mean initial:    {num_mean_init_mom:.4f} μm")
 print(f"MoM Number-Weighted Mean final:      {num_mean_final_mom:.4f} μm")
-print(f"\nMoM Volume-Weighted Mean initial:  {vol_mean_init_mom:.4f} μm")
+print(f"\nMoM Volume-Weighted Mean initial:    {vol_mean_init_mom:.4f} μm")
 print(f"MoM Volume-Weighted Mean final:      {vol_mean_final_mom:.4f} μm")
 
 # Plotting graph to see better the results, VERIFY LATER
@@ -288,4 +288,5 @@ ax.legend()
 ax.grid(True, alpha=0.3)
 
 plt.tight_layout()
+plt.savefig('MoL_vs_MoM_Comparison.pdf', bbox_inches='tight')  # Save the figure as a PDF file
 plt.show()
